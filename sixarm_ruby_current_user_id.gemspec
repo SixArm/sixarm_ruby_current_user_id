@@ -2,7 +2,7 @@ Gem::Specification.new do |s|
 
   s.name              = "sixarm_ruby_current_user_id"
   s.summary           = "SixArm.com » Ruby » CurrentUserId module for Rails sessions"
-  s.version           = "1.3.0"
+  s.version           = "1.3.4"
   s.author            = "SixArm"
   s.email             = "sixarm@sixarm.com"
   s.homepage          = "http://sixarm.com/"
@@ -13,7 +13,7 @@ Gem::Specification.new do |s|
   s.require_path      = 'lib'
   s.has_rdoc          = true
 
-  top_files           = [".gemtest","Rakefile","README.rdoc","INSTALL.txt","LICENSE.txt"]
+  top_files           = [".gemtest", "CHANGELOG.txt", "INSTALL.txt", "LICENSE.txt", "Rakefile", "README.rdoc", "VERSION"]
   lib_files           = ["lib/#{s.name}.rb"]
   test_files          = ["test/#{s.name}_test.rb"]
 
