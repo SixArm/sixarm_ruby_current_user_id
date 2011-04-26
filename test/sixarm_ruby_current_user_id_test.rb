@@ -25,32 +25,20 @@ class Testing < Test::Unit::TestCase
   end
 
   def test_current_user_id_memoize
-    # setup
     self.current_user_id=ID
-    assert_equal(ID, current_user_id, "current_user_id is set, so current_user_id should be an id")
-    # change
     session[:current_user_id]=ID+1
-    # memoize
     assert_equal(ID, current_user_id, "current_user_id is memoized, so current_user_id should be an id")    
   end
 
   def test_current_user_id_reload_false
-    # setup
     self.current_user_id=ID
-    assert_equal(ID, current_user_id, "current_user_id is set, so current_user_id should be an id")
-    # change
     session[:current_user_id]=ID+1    
-    # reload false
     assert_equal(ID, current_user_id(:reload=>false), "current_user_id reload => false, so current_user_id should be an id")    
   end
 
   def test_current_user_id_reload_true
-    # setup
     self.current_user_id=ID
-    assert_equal(ID, current_user_id, "current_user_id is set, so current_user_id should be an id")
-    # change
     session[:current_user_id]=ID+1    
-    # reload true
     assert_equal(ID+1, current_user_id(:reload=>true), "current_user_id reload => true, so current_user_id should be an id")    
   end
     
