@@ -16,7 +16,7 @@ class Testing < Test::Unit::TestCase
   ID=1234
 
   def test_current_user_id_default_is_nil
-    assert_nil(self.current_user_id, "current_user_id is not set, so current_user_id should be nil")
+    assert_nil(current_user_id, "current_user_id is not set, so current_user_id should be nil")
   end
 
   def test_current_user_id_round_trip
@@ -24,6 +24,36 @@ class Testing < Test::Unit::TestCase
     assert_equal(ID, current_user_id, "current_user_id is set, so current_user_id should be an id")
   end
 
+  def test_current_user_id_memoize
+    # setup
+    self.current_user_id=ID
+    assert_equal(ID, current_user_id, "current_user_id is set, so current_user_id should be an id")
+    # change
+    session[:current_user_id]=ID+1
+    # memoize
+    assert_equal(ID, current_user_id, "current_user_id is memoized, so current_user_id should be an id")    
+  end
+
+  def test_current_user_id_reload_false
+    # setup
+    self.current_user_id=ID
+    assert_equal(ID, current_user_id, "current_user_id is set, so current_user_id should be an id")
+    # change
+    session[:current_user_id]=ID+1    
+    # reload false
+    assert_equal(ID, current_user_id(:reload=>false), "current_user_id reload => false, so current_user_id should be an id")    
+  end
+
+  def test_current_user_id_reload_true
+    # setup
+    self.current_user_id=ID
+    assert_equal(ID, current_user_id, "current_user_id is set, so current_user_id should be an id")
+    # change
+    session[:current_user_id]=ID+1    
+    # reload true
+    assert_equal(ID+1, current_user_id(:reload=>true), "current_user_id reload => true, so current_user_id should be an id")    
+  end
+    
   def test_current_user_id_question_is_false
     assert_equal(false, current_user_id?, "current_user_id is not set, so current_user_id? should be false")
   end

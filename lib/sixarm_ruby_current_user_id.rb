@@ -30,7 +30,7 @@ module CurrentUserId
   # Return the current user id, suitable for chaining.
   
   def current_user_id=(id)
-    session[:current_user_id]=id
+    @curent_user_id=session[:current_user_id]=id
   end
 
 
