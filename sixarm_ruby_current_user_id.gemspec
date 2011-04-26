@@ -2,7 +2,7 @@ Gem::Specification.new do |s|
 
   s.name              = "sixarm_ruby_current_user_id"
   s.summary           = "SixArm.com » Ruby » CurrentUserId module for Rails sessions"
-  s.version           = "1.4.0"
+  s.version           = "1.4.2"
   s.author            = "SixArm"
   s.email             = "sixarm@sixarm.com"
   s.homepage          = "http://sixarm.com/"

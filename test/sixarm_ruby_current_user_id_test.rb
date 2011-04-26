@@ -19,12 +19,18 @@ class Testing < Test::Unit::TestCase
     assert_nil(current_user_id, "current_user_id is not set, so current_user_id should be nil")
   end
 
-  def test_current_user_id_round_trip
+  def test_current_user_id_equals
+    self.current_user_id=ID
+    assert_equal(ID, @current_user_id, "current_user_id is set, so @current_user_id should be an id")
+    assert_equal(ID, session[:current_user_id], "current_user_id is set, so session[:current_user_id] should be an id")
+  end
+
+  def test_current_user_id_equals_with_round_trip
     self.current_user_id=ID
     assert_equal(ID, current_user_id, "current_user_id is set, so current_user_id should be an id")
   end
 
-  def test_current_user_id_memoize
+  def test_current_user_id_with_memoize
     self.current_user_id=ID
     session[:current_user_id]=ID+1
     assert_equal(ID, current_user_id, "current_user_id is memoized, so current_user_id should be an id")    
