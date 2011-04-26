@@ -7,10 +7,15 @@ module CurrentUserId
 
 
   # Get the current user id in the Rails session array.
+  #
+  # The current user id is memoized as @current_user_id.
+  # To reload, pass :reload => true
+  #
   # Return the session's current user id.
 
-  def current_user_id
-    return session[:current_user_id]
+  def current_user_id(ops={})
+    if ops[:reload] then @current_user_id=nil end
+    @current_user_id ||= session[:current_user_id]
   end
 
 
