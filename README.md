@@ -1,6 +1,7 @@
 # SixArm.com » Ruby » <br> CurrentUserId module for Rails sessions
 
-* Docs: <http://sixarm.com/sixarm_ruby_current_user_id/doc>
+* Doc: <http://sixarm.com/sixarm_ruby_current_user_id/doc>
+* Gem: <http://rubygems.org/gems/sixarm_ruby_current_user_id>
 * Repo: <http://github.com/sixarm/sixarm_ruby_current_user_id>
 * Email: Joel Parker Henderson, <joel@sixarm.com>
 
