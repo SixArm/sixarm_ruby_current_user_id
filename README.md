@@ -1,4 +1,4 @@
-# SixArm.com » Ruby » <br> CurrentUserId module for Rails sessions
+# Ruby » <br> CurrentUserId module for Rails sessions
 
 * Doc: <http://sixarm.com/sixarm_ruby_current_user_id/doc>
 * Gem: <http://rubygems.org/gems/sixarm_ruby_current_user_id>
