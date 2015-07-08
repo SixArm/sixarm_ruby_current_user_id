@@ -1,6 +1,7 @@
 # Changes
 
-* 2012-03-14 1.4.2 Update docs, tests
+* 2015-07-07 1.4.4 Update gemspec to use file manifest
+* 2012-03-14 1.4.3 Update docs, tests
 * 2011-04-25 1.4.2 Add better memoize and fix bug in current_user_id text
 * 2011-04-25 1.4.0 Add memoize and :reload => true
 * 2011-04-22 1.3.4 Add self to protect from local variable masking
