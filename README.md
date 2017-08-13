@@ -22,23 +22,21 @@ Want to help? We're happy to get pull requests.
 
 ## Install
 
-To install using a Gemfile, add this:
+### Gem
 
-    gem "sixarm_ruby_current_user_id", ">= 1.4.4", "< 2"
+Run this command in your shell or terminal:
 
-To install using the command line, run this:
+    gem install sixarm_ruby_current_user_id
 
-    gem install sixarm_ruby_current_user_id -v ">= 1.4.4, < 2"
+Or add this to your Gemfile:
 
-To install using the command line with high security, run this:
+    gem 'sixarm_ruby_current_user_id'
 
-    wget http://sixarm.com/sixarm.pem
-    gem cert --add sixarm.pem && gem sources --add http://sixarm.com
-    gem install sixarm_ruby_current_user_id -v ">= 1.4.4, < 2" --trust-policy HighSecurity
+### Require
 
 To require the gem in your code:
 
-    require "sixarm_ruby_current_user_id"
+    require 'sixarm_ruby_current_user_id'
 
 <!--INSTALL-SHUT-->
 

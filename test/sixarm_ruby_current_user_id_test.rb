@@ -5,7 +5,7 @@ SimpleCov.start
 require "sixarm_ruby_current_user_id"
 
 
-class Testing < Test::Unit::TestCase
+class Testing < Minitest::Test
 
   # Mock session
   def session

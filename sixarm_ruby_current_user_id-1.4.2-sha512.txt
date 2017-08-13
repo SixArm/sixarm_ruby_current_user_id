@@ -1,1 +1,0 @@
-dfe0ce71eb402718f28d1ce92ec3e07c8bf7c4b550f97a6a88fde5764cad0cf2c9377c1cb0c8f1a1db7bbb8608e6e9c2027d999dca0e948a388f24463b755745  sixarm_ruby_current_user_id-1.4.2.gem
