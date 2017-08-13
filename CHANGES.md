@@ -1,6 +1,6 @@
 # Changes
 
-* 2017-08-13 1.0.7 Update to Ruby 2.4, spdx licenses, rake test, etc.
+* 2017-08-13 1.4.5 Update to Ruby 2.4, spdx licenses, rake test, etc.
 * 2015-07-07 1.4.4 Update gemspec to use file manifest
 * 2012-03-14 1.4.3 Update docs, tests
 * 2011-04-25 1.4.2 Add better memoize and fix bug in current_user_id text
