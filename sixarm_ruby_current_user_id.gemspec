@@ -3,7 +3,7 @@
 Gem::Specification.new do |s|
 
   s.name              = "sixarm_ruby_current_user_id"
-  s.summary           = "SixArm.com » Ruby » CurrentUserId"
+  s.summary           = "SixArm.com → Ruby → CurrentUserId"
   s.description       = "CurrentUserId module to get and set the current user in a Rails session"
   s.version           = "1.4.4"
 
